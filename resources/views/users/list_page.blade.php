@@ -89,7 +89,7 @@
             </div>
             <div class="bg-white p-2 shadow-lg mt-3" style="border-radius:20px;">
                 <textarea class="form-control fw-bold text-center bg-white p-2" style="border-radius: 20px;" rows="4"
-                    id="remark" placeholder="หมายเหตุ(ความต้องการเพิ่มเติม)">
+                    id="remark" placeholder="หมายเหตุ : รบกวนระบุชื่อลูกค้า เบอร์โทรศัพท์ และความต้องการเพิ่มเติม ค่ะ">
 </textarea>
             </div>
             <a href="javascript:void(0);" class="btn-aprove mt-3" id="confirm-order-btn"
