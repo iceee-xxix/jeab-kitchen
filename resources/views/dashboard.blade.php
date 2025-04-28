@@ -235,6 +235,7 @@
             success: function(response) {
                 $('#modal-detail').modal('show');
                 $('#body-html').html(response);
+                $('#order_id').val(id);
             }
         });
     });
