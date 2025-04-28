@@ -235,13 +235,14 @@
             success: function(response) {
                 $('#modal-detail').modal('show');
                 $('#body-html').html(response);
-                $('#order_id').val(1);
             }
         });
     });
 
     $(document).on('click', '.modalPay', function(e) {
         var total = $(this).data('total');
+        var id = $(this).data('id');
+        console.log(id);
         Swal.showLoading();
         $.ajax({
             type: "post",
@@ -257,7 +258,7 @@
                 $('#modal-pay').modal('show');
                 $('#totalPay').html(total + ' บาท');
                 $('#qr_code').html(response);
-                $('#order_id').val($(this).data('id'));
+                $('#order_id').val(id);
             }
         });
     });
